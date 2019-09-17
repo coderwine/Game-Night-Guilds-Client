@@ -1,5 +1,8 @@
 This is the base structure of how this App will look through the eyes of the user.
 
+TO-DO:
+    -fix favicon for title tab
+
 ///////////////////////////////////////////////////////////////////
 Fonts:
     Title:
@@ -15,6 +18,7 @@ Fonts:
             - font-family: 'Fira Sans', sans-serif;
 
 ///////////////////////////////////////////////////////////////////
+
 Photo/Icon Credits:
     pic: dragon-rpg.jpg
     Photo by Clint Bustrillos on Unsplash
@@ -48,6 +52,9 @@ Photo/Icon Credits:
 
     pic: library.jpg
     Photo by Jaredd Craig on Unsplash
+
+    icon: stained-glass-window.svg
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
 
     icon: gear.svg
     <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>

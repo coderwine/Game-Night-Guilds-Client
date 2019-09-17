@@ -3,13 +3,14 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 50vmin;
+  border: 5pt solid #707070;
+  border-radius: 300px;
   pointer-events: none;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,14 +21,9 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #398499;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:focus {
+  outline: none;
 }
