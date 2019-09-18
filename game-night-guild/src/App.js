@@ -4,6 +4,7 @@ import Splash from './Components/SplashPage/Splash';
 import Sitebar from './Components/Navbar/Sitebar';
 import SignIn from './Components/SplashPage/LoginSignup';
 import PageOne from './Components/Auth/PageOne';
+import Games from './Components/Game Sessions/Games';
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
     // <Splash/>
     // <SignIn/>
     // <Sitebar/>
-    <PageOne/>
+    // <PageOne/>
+    <Games/>
   );
 }
 

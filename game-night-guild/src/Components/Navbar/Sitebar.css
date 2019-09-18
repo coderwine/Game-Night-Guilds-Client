@@ -1,43 +1,60 @@
+
+/* FULL SCREEN */
 .navBar {
-    background-color: #707070;
+    background-color: transparent;
     width: 100vw;
     height: 3.5vh;
-    top: 9em;
+    top: 15em;
     position: fixed;
 }
 
 .navBar button {
     background-image: url('../../Assets/white-tower.svg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    right: 2em;
-    top: 7.25em;
-    position: fixed;
-    height: 8em;
-    width: 8em;
-    border: 5pt solid #707070;
-    border-radius: 300px;    
-}
-
-@media only screen and (min-width: 400px) {
-
-    .navBar button {
-        background-image: url('../../Assets/white-tower.svg');
         background-repeat: no-repeat;
         background-size: 100%;
         right: 6em;
-        top: 8.25em;
+        top: 3.25em;
         position: fixed;
         height: 12em;
         width: 12em;
         border: 5pt solid #707070;
         border-radius: 300px;    
     }
-
+    
     .navBar button:hover{
         background-image: radial-gradient(rgba(95, 0, 0, .2), rgba(95,0,0,.4), rgba(95,0,0,.6)),
-            url('../../Assets/white-tower.svg');
+        url('../../Assets/white-tower.svg');
         border: 5pt solid rgba(95, 0, 0);
     }
+    
+    /* ///////////////////////////////////////////////////// */
+    /* MOBILE */
+    @media only screen and (max-width: 420px) {
+        .navBar {
+            background-color: #707070;
+            width: 100vw;
+            height: 2.5vh;
+            top: 7.5em;
+            position: fixed;
+        }
+    
+        .navBar button {
+            background-image: url('../../Assets/white-tower.svg');
+            background-repeat: no-repeat;
+            background-size: 102%;
+            right: 2em;
+            top: 7.25em;
+            position: fixed;
+            height: 6.8em;
+            width: 6.8em;
+            border: 5pt solid #707070;
+            border-radius: 300px;    
+        }
 
-}
+        .navBar button:hover{
+            background-image: url('../../Assets/white-tower.svg');
+            border: 5pt solid #707070;
+        }
+        
+    }
+    

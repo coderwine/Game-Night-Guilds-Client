@@ -1,24 +1,299 @@
-.navbarSpot{
-    z-index: 1;
-}
+/* FULL SCREEN */
 
-.topImage {
-    width: 100vw;
-    height: 30vh;
-    z-index: 0;
-    background-repeat: no-repeat;
-    top: 0;
-    position: fixed;
-}
+.userDisplayMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    }
 
+    .gameInputButton {
+        width: 22vw;
+        height: 35vh;
+        border: 5pt solid #707070;
+        border-radius: 600px;
+        z-index: inherit;
+        background-color: whitesmoke;
+        background-image: url('../../Assets/ancient-scroll.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 75%;
+        position: fixed;
+        bottom: 18em;
+        left: 35%;
+    }
 
+    .gameInputButton:hover{
+        background-color: rgba(255, 255, 255,.5);
+    }
 
-.backgroundImage {
-    width: 130vw;
-    height: 75vh;
-    background-repeat: no-repeat;
+    .backgroundImage {
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        position: center;   
+        z-index: -1;
+        overflow: hidden;
+    }
     
-    bottom: 0;
-    position: fixed;
-    z-index: -1;
+    .backgroundImageInput {
+        width: 100vw;
+        height: 100vh;
+        background-image: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,.5),rgba(0,0,0,1)), url('../../Assets/AceInHand.jpg');
+        background-size:100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: center;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    .topImage {
+        width: 100vw;
+        height: 35vh;
+        z-index: -1;
+        background-repeat: repeat;
+        top: -5.5em;
+        position: fixed;
+    }
+    
+    /* GAME FORM */
+    .fillOutForm {
+        display: block;
+        width: 50%;
+        height: 60vh;
+        top: 8em;
+        text-align: center;
+        position: relative;
+        margin: auto;
+        
+    }
+
+    .fillOutForm Input {
+        border: none;
+        border-radius: 10pt;
+        height: 5vh;
+        width: 20vw;
+        margin-top: .7em;
+        text-align: center;
+        font-size: 1em;
+        background-color: rgba(255, 255, 255,.95);
+    }
+
+    .fillOutForm #commentField #datePlayed {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 4em;
+    }
+
+    .fillOutForm #commentField {
+        border: none;
+        border-radius: 10pt;
+        height: 10vh;
+        width: 20vw;
+        margin-top: 1em;
+        padding: 1em;
+    }
+
+    .fillOutForm .winCheck span {
+        color: whitesmoke;
+        font-size: 3em;
+        -webkit-text-stroke: 1px black;        
+    }
+
+    .submitArrow {
+        height: 14vh;
+        width: 9vw;
+        border: 2pt solid #707070;
+        border-radius: 300px;
+        margin-top: 3em;
+        background-color: whitesmoke;
+        background-image: url('../../Assets/archery.svg');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 14pt;
+        background-attachment: fixed;
+    }
+
+        /* TABLE */
+
+    .tablePageBack {
+        height: 100vh;
+        width: 100vw;
+        background-image: radial-gradient(rgba(0,0,0,.4),rgba(0,0,0,.2),rgba(0,0,0,.6),rgba(0,0,0,.8), rgba(100,100,100,.4)),url('../../Assets/library.jpg');
+        background-size: 100%;
+        background-position: center;
+    }
+
+    Table {
+        color: white;
+        margin: 20em auto;
+        width: 50%;
+        height: 15vh;
+        padding: 5px;
+        text-align: center;
+        background-color: rgba(0,0,0,.5);
+        border-radius: 10pt;
+        border-top: 5pt solid #707070;
+        border-left: 3pt solid #707070;
+        border-right: 3pt solid #707070;
+        overflow: scroll;
+    }
+
+/* /////////////////////////////////////////////////// */
+    /* MOBILE LAYOUT */
+    
+    @media only screen and (max-width: 420px) {
+    
+    .userDisplayMain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navbarSpot{
+        z-index: 1;
+    }
+    
+    .topImage {
+        width: 100vw;
+        height: 30vh;
+        z-index: -1;
+        background-repeat: no-repeat;
+        top: -1.5em;
+        right: 0;
+        position: fixed;
+    }
+    
+    .backgroundImage {
+        width: 100vw;
+        height: 88vh;
+        background-repeat: no-repeat;
+        bottom: -3em;
+        left: 0;
+        position: fixed;
+        z-index: -1;
+    }
+    
+    .backgroundImageInput {
+        width: 150vw;
+        height: 88vh;
+        background-image: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,.5),rgba(0,0,0,1)), url('../../Assets/AceInHand.jpg');
+        background-size:150%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position-x: -164pt;
+        bottom: -3em;
+        left: 0;
+        position: fixed;
+        z-index: -1;
+    }
+    
+    .gameInputButton {
+        width: 50vw;
+        height: 28vh;
+        border: 5pt solid #707070;
+        border-radius: 600px;
+        bottom: 10em;
+        left: 26vw;
+        position: fixed;
+        z-index: inherit;
+        background-color: whitesmoke;
+        background-image: url('../../Assets/ancient-scroll.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 75%;
+    }
+
+    .gameInputButton:hover{
+        background-color: whitesmoke;
+    }    
+    .gameInputButton:focus{
+        background-color: rgba(255, 255, 255,.5);
+    }  
+    
+    /* GAME FORM */
+
+    .fillOutForm {
+        display: block;
+        width: 100vw;
+        height: 35vh;
+        text-align: center;
+        position: fixed;
+        bottom: 10em;
+        
+    }
+
+    .fillOutForm Input {
+        border: none;
+        border-radius: 10pt;
+        height: 6vh;
+        width: 70vw;
+        margin-top: .5em;
+        text-align: center;
+        font-size: 1em;
+        background-color: rgba(255, 255, 255,.95);
+    }
+
+    .fillOutForm #commentField #datePlayed {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 4em;
+    }
+
+    .fillOutForm #commentField {
+        border: none;
+        border-radius: 10pt;
+        height: 10vh;
+        width: 70vw;
+        margin-top: .5em;
+        padding: 1em;
+    }
+
+    .fillOutForm .winCheck span {
+        color: whitesmoke;
+        padding-left: 1.5em;
+        font-size: 2em;
+        font-family: 'Fira Sans', sans-serif;
+        -webkit-text-stroke: .5px black;        
+    }
+
+    .submitArrow {
+        height: 7vh;
+        width: 12vw;
+        border: .5pt solid #707070;
+        border-radius: 300px;
+        background-color: whitesmoke;
+        background-image: url('../../Assets/archery.svg');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 4pt;
+        bottom: 1.25em;
+        left: 20em;
+        position: fixed;
+    }
+
+/* TABLES */
+
+    .tablePageBack {
+        height: 80vh;
+        width: 100vw;
+        background-size: 100%;
+        background-position: center;
+        bottom: 0;
+        position: fixed;
+        z-index: -1;
+    }
+
+    Table {
+        color: white;
+        height: 15vh;
+        width: 80vw;
+        top: -6em;
+        left: 2em;
+        position: fixed;
+        
+    }
 }

@@ -1,106 +1,43 @@
-.mainBackground {
-background-image: radial-gradient(rgba(0,0,0,0),
-                    rgba(0,0,0,.2),
-                    rgba(0,0,0,.5),
-                    rgba(0,0,0,1)),
-                    url('../../Assets/clothBackground.jpg');
-background-repeat: no-repeat;
-background-position: center;
-background-size: 100vh; 
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-font-size: calc(10px + 2vmin);
-}
-
-.mainLogo {
-    height: 60vmin;
-    border: 5pt solid #707070;
-    border-radius: 300px;
-    pointer-events: none;
-}
-
-.login-signup-logo {
-    height: 45vmin;
-    border: 4.5pt solid #707070;
-    border-radius: 300px;
-    pointer-events: none;
-    margin-top: 2em;
-    margin-bottom: 2em;    
-}
-
-h1 {
-    color: whitesmoke;
-    font-size: 2.8em;
-    text-shadow: 5pt 5pt 2pt rgb(30,30,30);
-}
-
-button {
-    background-color: transparent;
-    border: none;
-}
-
-button:focus {
-    outline: none;
-}
-
-.splash-input {
-    margin-top: 1em;
-    height: 8vh;
-    width: 60vw;
-    text-align: center;
-    border-radius: 10px;
-    border: none;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1em;
-}
-
-                            /* ICONS */
-
-.signupIcon{
-    background-image: url('../../Assets/signup.svg');
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 2.7em;
-    width: 2.7em;
-    background-color: whitesmoke;
-    border: .25em solid whitesmoke;
-    border-radius: 300px;
-    left: 1.15em;
-    bottom: 1.15em;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-}
-
-.backIcon{
-    background-color: rgba(255,255,255,1);
-    background-image: url('../../Assets/previous.svg');
-    background-size: 85%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 2.7em;
-    width: 2.7em;
-    border: .25em solid whitesmoke;
-    border-radius: 300px;
-    left: 1.15em;
-    top: 1.15em;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-}
-
 
                             /* FULL SCREEN */
-@media only screen and (min-width: 400px){
     .mainLogo {
         height: 45vmin;
         border: 5pt solid #707070;
         border-radius: 300px;
         pointer-events: none;
+    }
+
+    .mainBackground {
+        background-image: radial-gradient(rgba(0,0,0,0),
+                            rgba(0,0,0,.4),
+                            rgba(0,0,0,.7),
+                            rgba(0,0,0,1)),
+                            url('../../Assets/clothBackground.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 100vw; 
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+        }
+
+    h1 {
+        color: whitesmoke;
+        font-size: 2.8em;
+        text-shadow: 5pt 5pt 2pt rgb(30,30,30);
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+    }
+    
+    button:focus {
+        outline: none;
     }
 
     .login-signup-logo {
@@ -121,20 +58,6 @@ button:focus {
         font-family: 'Fira Sans', sans-serif;
         font-size: 1em;
     }
-
-    .signupIcon{
-        height: 4.5em;
-        width: 4.5em;
-        background-color: whitesmoke;
-        border: .25em solid whitesmoke;
-        border-radius: 300px;
-        top: 2em;
-        left: 2em;
-        position: fixed;
-    }
-    .signupIcon:hover {
-        background-color: grey;
-    }
     
     .backIcon{
         background-color: rgba(255,255,255,1);
@@ -151,11 +74,30 @@ button:focus {
         display: flex;
         justify-content: center;
     }
+                                /* ICONS */
+    .signupIcon{
+        background-image: url('../../Assets/signup.svg');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 4.5em;
+        width: 4.5em;
+        background-color: whitesmoke;
+        border: .25em solid whitesmoke;
+        border-radius: 300px;
+        top: 2em;
+        left: 2em;
+        position: fixed;
+    }
 
+    .signupIcon:hover {
+        background-color: grey;
+    }
+    
     .backIcon:hover {
         background-color: grey;
     }
-
+    
     .loginButton {
         font-size: 4em;
     }
@@ -164,5 +106,98 @@ button:focus {
         text-shadow: -25px -10px 50px #000;
     }
 
+    
+/* //////////////////////////////////////////// */
+    /* MOBILE */
+    @media only screen and (max-width: 420px) {
+
+    .mainBackground {
+        background-image: radial-gradient(rgba(0,0,0,0),
+                            rgba(0,0,0,.2),
+                            rgba(0,0,0,.5),
+                            rgba(0,0,0,1)),
+                            url('../../Assets/clothBackground.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100vh; 
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+        }
+    
+    .mainLogo {
+        height: 60vmin;
+        border: 5pt solid #707070;
+        border-radius: 300px;
+        pointer-events: none;
+    }
+    
+    .login-signup-logo {
+        height: 45vmin;
+        border: 4.5pt solid #707070;
+        border-radius: 300px;
+        pointer-events: none;
+        margin-top: 2em;
+        margin-bottom: 2em;    
+    }
+    
+    .signupIcon{
+        background-image: url('../../Assets/signup.svg');
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 2.7em;
+        width: 2.7em;
+        background-color: whitesmoke;
+        border: .25em solid whitesmoke;
+        border-radius: 300px;
+        left: 1.15em;
+        bottom: 1.15em;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .splash-input {
+        margin-top: .25em;
+        height: 8vh;
+        width: 60vw;
+        text-align: center;
+        border-radius: 10px;
+        border: none;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 1em;
+    }
+    .backIcon{
+        background-color: rgba(255,255,255,1);
+        background-image: url('../../Assets/previous.svg');
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 2.7em;
+        width: 2.7em;
+        border: .25em solid whitesmoke;
+        border-radius: 300px;
+        left: 1.15em;
+        top: 1.15em;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+    }
+
+    .signupIcon:hover {
+        background-color: whitesmoke;
+    }
+    
+    .backIcon:hover {
+        background-color: whitesmoke;
+    }
+    
+    .loginButton:hover {
+        color: whitesmoke;
+    }
 }
 
