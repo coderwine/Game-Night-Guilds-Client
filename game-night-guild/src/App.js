@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Splash from './Components/SplashPage/Splash';
 import Sitebar from './Components/Navbar/Sitebar';
@@ -7,13 +7,24 @@ import PageOne from './Components/Auth/PageOne';
 import Games from './Components/Game Sessions/Games';
 
 
+
+
 function App() {
+
+    const [token, setToken ] = useState(undefined);
+
+    let storeSessionToken = () => {
+      setToken(token)
+    }
+
   return (
-    // <Splash/>
-    // <SignIn/>
-    // <Sitebar/>
-    // <PageOne/>
-    <Games/>
+    <div>
+    {/* <Splash/> */}
+    {/* <SignIn tokenHandler={ storeSessionToken } /> */}
+     <Sitebar/>
+  {/* <PageOne/> */}
+   {/* <Games/> */}
+    </div>
   );
 }
 

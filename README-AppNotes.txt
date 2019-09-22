@@ -3,6 +3,8 @@ This is the base structure of how this App will look through the eyes of the use
 TO-DO:
     -Need to add "Previous" & "Next" buttons to table page.
     -Work on Module for menu button.
+    -When a user is on full-screen, default username as "active".
+    -Need to include Rating concept - thinking a flow of "checkboxes"
     -How can I make it where the table include more information when viewed on a full screen and less on mobile.
         - when a game is selected, it provides full info for that game.
     
