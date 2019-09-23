@@ -18,7 +18,6 @@ const Sitebar = (props) => {
 
         <div className="navBar">
             
-            <button onClick={toggleExampleModal} type="button" className="btn btn-primary" id="mainMenuBtn"></button>
 
             <Modali.Modal {...exampleModal}>
                 <div className="modalContent">
@@ -29,8 +28,11 @@ const Sitebar = (props) => {
                 <button type="button" id="diceBtn" onClick="#">Dice</button><br/>
                 <button type="button" id="timerBtn" onClick="#">Timer</button><br/>
                 <button type="button" id="logoutBtn" onClick="#">Logout</button><br/>
+                <button type="button" id="closeBtn" onClick="#">Close</button><br/>
                 </div>
             </Modali.Modal>
+
+            <button onClick={toggleExampleModal} type="button" className="btn btn-primary" id="mainMenuBtn"></button>
             
         </div>
     )

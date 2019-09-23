@@ -10,13 +10,12 @@ const PageOne = () => {
 
     return(
         <div className="userDisplayMain">
-            <Sitebar className="navbarSpot"/>
-            <img className="topImage" src={topBanner} alt="Row of Pawns" />
-            {/* <div>
-                <img  className="backgroundImage" src={backgroundImage} alt="three die"/>
+            <div className="backgroundImage">
+                <img className="topImage" src={topBanner} alt="Row of Pawns" />
+                <Sitebar className="navbarSpot"/>
                 <button className="gameInputButton"></button>
-            </div> */}
-            <Game/>
+            </div>
+            {/* <Game/> */}
         </div>
     )
 }

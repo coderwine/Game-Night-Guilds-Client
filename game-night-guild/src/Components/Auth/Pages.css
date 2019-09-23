@@ -5,23 +5,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
     background-color: black;
+    z-index: 0;
+    }
+
+    .topImage {
+        visibility: hidden;
+        z-index: -1;
     }
 
     .gameInputButton {
-        width: 22vw;
-        height: 35vh;
+        width: 20em;
+        height: 20em;
         border: 5pt solid #707070;
         border-radius: 600px;
-        z-index: inherit;
+        z-index: 1;
         background-color: whitesmoke;
         background-image: url('../../Assets/ancient-scroll.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: 75%;
-        position: fixed;
-        bottom: 18em;
-        left: 35%;
+        position: absolute;
+        bottom: 10em;
+        left: 40%;
+
     }
 
     .gameInputButton:hover{
@@ -31,9 +40,11 @@
     .backgroundImage {
         width: 100vw;
         height: 100vh;
+        background-image: url('../../Assets/dice.jpg');
         background-repeat: no-repeat;
-        position: center;   
-        z-index: -1;
+        background-size: 120%;
+        background-position: center;
+        z-index: 0;
         overflow: hidden;
     }
     
@@ -49,14 +60,6 @@
         overflow: hidden;
     }
 
-    .topImage {
-        width: 100vw;
-        height: 35vh;
-        z-index: -1;
-        background-repeat: repeat;
-        top: -5.5em;
-        position: fixed;
-    }
     
                             /* GAME FORM */
     .fillOutForm {
@@ -175,38 +178,33 @@
     
     @media only screen and (max-width: 420px) {
     
-    .userDisplayMain {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+   
+    /* .navbarSpot{
+        z-index: 3;
+    } */
     
-    .navbarSpot{
-        z-index: 1;
-    }
+    .backgroundImage {
+        /* background-size: 100%; */
+        /* background-position: bottom; */
+        /* position: absolute;    */
+        background-size: 60%;
+        background-position: center;
     
+    }
+
     .topImage {
+        visibility: visible;
         width: 100vw;
         height: 30vh;
-        z-index: -1;
+        z-index: 2;
         background-repeat: no-repeat;
         top: -1.5em;
         right: 0;
-        position: fixed;
+        position: initial;
     }
     
-    .backgroundImage {
-        width: 100vw;
-        height: 88vh;
-        background-repeat: no-repeat;
-        bottom: -3em;
-        left: 0;
-        position: fixed;
-        z-index: -1;
-    }
     
-    /* .backgroundImageInput {
+    .backgroundImageInput {
         width: 150vw;
         height: 88vh;
         background-image: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,.5),rgba(0,0,0,1)), url('../../Assets/AceInHand.jpg');
@@ -218,7 +216,7 @@
         left: 0;
         position: fixed;
         z-index: -1;
-    } */
+    }
 
     .backgroundImageInput {
         background-image: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,.5),rgba(0,0,0,1)), url('../../Assets/AceInHand.jpg');
@@ -228,24 +226,12 @@
     }
     
     .gameInputButton {
-        width: 50vw;
-        height: 28vh;
-        border: 5pt solid #707070;
-        border-radius: 600px;
-        bottom: 10em;
-        left: 26vw;
-        position: fixed;
-        z-index: inherit;
-        background-color: whitesmoke;
-        background-image: url('../../Assets/ancient-scroll.svg');
+        background-color: red;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 75%;
     }
 
-    .gameInputButton:hover{
-        background-color: whitesmoke;
-    }    
     .gameInputButton:focus{
         background-color: rgba(255, 255, 255,.5);
     }  

@@ -21,8 +21,8 @@ function App() {
     <div>
     {/* <Splash/> */}
     {/* <SignIn tokenHandler={ storeSessionToken } /> */}
-     <Sitebar/>
-  {/* <PageOne/> */}
+     {/* <Sitebar/> */}
+  <PageOne/>
    {/* <Games/> */}
     </div>
   );
